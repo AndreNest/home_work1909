@@ -12,6 +12,10 @@ def rename_student(new_list_name_studenst):
         if int(str(new_list_name_studenst[i])[len(new_list_name_studenst[i]) - 1]) > 4: # отсекаем оценки ниже 4
             new_list_name_studenst[i] = str(new_list_name_studenst[i]).upper()
         file.write('\n' + str(list_name_students[i]))
+    print(new_list_name_studenst)
     file.close()
 rename_student(list_name_students)
+
+
+
 
